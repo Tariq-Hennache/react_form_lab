@@ -1,6 +1,7 @@
 import { userState } from "react";
 import RecipeList from "./RecipeList";
 import NewRecipe from "./newRecipe";
+import CakeForm from "./CakeForm";
 
 const RecipeContainer =() => {
     const [cakes, setCakes] = userState(cakes);
@@ -28,6 +29,7 @@ const RecipeContainer =() => {
         <>
         <RecipeList cakes = {cakes} />
         <NewRecipe onSubmit={addNewRecipe} />
+        <CakeForm onSubmit={addNewRecipe} />
         </>
     )
         
