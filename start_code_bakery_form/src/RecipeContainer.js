@@ -10,12 +10,24 @@ const RecipeContainer =() => {
         setCakes(updatedCakes);
         setapplicationOpen(false);
     }
+    
+    const addNewRecipe = (newRecipe) => {
 
-    const updatedCakes = [...cakes,NewRecipe]
+        const updatedRecipe = [...cakes, newRecipe]
+        
+
+        if(applicationOpen) {
+            setCakes(updatedRecipe);
+            setapplicationOpen(false);
+        }
+    }
+
+
 
     return(
         <>
         <RecipeList cakes = {cakes} />
+        <NewRecipe onSubmit={addNewRecipe} />
         </>
     )
         
