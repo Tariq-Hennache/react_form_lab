@@ -23,7 +23,7 @@ const RecipeList = () => {
         }
     ]
 
-    return (
+    return (//mapped cake already
         <>
             <section>
                 {

@@ -3,6 +3,8 @@ import Title from "./Title";
 import RecipeList from "./RecipeList";
 import Search from "./Search";
 import CakeForm from "./CakeForm";
+import NewRecipe from "./newRecipe";
+import StateToggleExample from "./StateToggleExample";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <RecipeList />
         <Search />
         <CakeForm />
+        <NewRecipe />
+        <StateToggleExample />
       </main>
     </>
   );
