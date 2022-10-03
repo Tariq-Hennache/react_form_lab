@@ -21,7 +21,7 @@ const NewRecipe = ({onSubmit})=> {
     const handleFormSubmission = (event) => {
         event.preventDefault();
 
-        if (cakeName == "" || integredients == "" || rating == 0) {
+        if (cakeName === "" || integredients === "" || rating === 0) {
             return
         }
 
